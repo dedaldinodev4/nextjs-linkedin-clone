@@ -5,8 +5,10 @@ import { ContainerProfile, ProfileImage } from './styled';
 export const ProfilePanel = () => {
   return (
     <Panel>
-      <ContainerProfile>
-        <div className="profile-cover"></div>
+      <ContainerProfile cover = {'cover'}>
+        <div className="profile-cover">
+
+        </div>
         <ProfileImage
           src="/Me2.png"
           alt="Avatar"

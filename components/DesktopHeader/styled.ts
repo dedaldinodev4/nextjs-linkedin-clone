@@ -4,7 +4,9 @@ import {
     AiFillHome, AiOutlineBell,
     AiFillCaretDown
 } from 'react-icons/ai';
-import {BiBriefcase, BiGroup} from 'react-icons/all'
+import {
+  BiBriefcase, BiGroup
+} from 'react-icons/bi'
 
 export const Container = styled.div`
   background: var(--color-header);
