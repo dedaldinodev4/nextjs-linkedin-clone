@@ -19,13 +19,17 @@ export const ProfilePanel = () => {
         <div className="separator"></div>
 
         <div className="key-value">
-          <span className="key">Quem viu seu perfil</span>
-          <span className="value">958</span>
+          <span className="key">Conexões</span>
+          <span className="value">31</span>
         </div>
+        <div className="key-note">
+          <span className="key">Amplie suar rede</span>
+        </div>
+        <div className="separator"></div>
         <div className="key-value">
-          <span className="key">Viram sua publicação</span>
-          <span className="value">188</span>
+          <span className="key">Meus itens</span>
         </div>
+
       </ContainerProfile>
     </Panel>
   );

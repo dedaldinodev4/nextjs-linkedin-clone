@@ -20,7 +20,7 @@ export const FeedPost = () => {
     <Panel>
       <Container>
         <Row className="heading">
-          <Avatar src="/Me2.png" alt="Rocketseat" />
+          <Avatar src="/Me2.png" alt="Me" />
           <Column>
             <h3>Dedaldino Daniel</h3>
             <h4>Software Developer</h4>

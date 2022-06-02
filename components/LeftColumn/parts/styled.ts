@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FaHashtag } from 'react-icons/fa';
+import { FaHashtag, FaPeopleCarry, FaPeopleArrows  } from 'react-icons/fa';
 
 export const ContainerProfile = styled.div`
   padding-bottom: 12px;
@@ -9,6 +9,7 @@ export const ContainerProfile = styled.div`
     height: 54px;
     background: url('/${props => props.cover}.jpg') no-repeat scroll center center;
     background-size: cover;
+    border-radius: 5px 5px 0 0;
   }
   .profile-picture {
     width: 72px;
@@ -54,6 +55,18 @@ export const ContainerProfile = styled.div`
       color: var(--color-link);
     }
   }
+  .key-note {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    margin: 5px 12px;
+    font-weight: bold;
+
+    .key {
+      color: var(--color-black);
+    }
+  }
 `;
 
 
@@ -71,7 +84,7 @@ export const ContainerHashtag = styled.div`
     padding: 8px 12px 16px;
 
     .title {
-      color: var(--color-link);
+      color: var(--color-gray);
       margin-bottom: 10px;
     }
     .tag {
@@ -83,7 +96,7 @@ export const ContainerHashtag = styled.div`
   }
 `;
 
-export const HashtagIcon = styled(FaHashtag)`
+export const HashtagIcon = styled(FaPeopleArrows)`
   width: 16px;
   height: 16px;
   color: var(--color-hashtag);
