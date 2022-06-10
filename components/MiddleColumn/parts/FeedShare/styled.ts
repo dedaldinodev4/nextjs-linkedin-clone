@@ -51,6 +51,11 @@ export const Container = styled.div`
   }
 `;
 
+
+export const textArea = styled.textarea`
+  border: 1px solid var(--color-gray);
+  border-radious: 20px;
+`;
 export const WriteIcon = styled(BsPencilSquare)`
   width: 20px;
   height: 20px;

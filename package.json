@@ -3,7 +3,11 @@
   "private": true,
   "author": "Dedaldino Daniel",
   "description": "Clonagem da rede social linkedIn usando nextjs",
-  "keywords": ["nextjs", "hooks", "react"],
+  "keywords": [
+    "nextjs",
+    "hooks",
+    "react"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -22,6 +26,7 @@
     "@types/node": "17.0.23",
     "@types/react": "18.0.0",
     "@types/styled-components": "^5.1.25",
+    "babel-plugin-styled-components": "^2.0.7",
     "eslint": "7",
     "eslint-config-next": "12.1.4",
     "typescript": "4.6.3"

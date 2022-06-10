@@ -6,6 +6,7 @@ import {
     VideoCameraIcon,
     DocumentIcon,
     ArticleIcon,
+    textArea
   } from './styled';
   
 export const FeedShare = () => {
@@ -13,8 +14,9 @@ export const FeedShare = () => {
       <Panel>
         <Container>
           <div className="write">
-            <WriteIcon />
-            <span>Começar uma publicação</span>
+            <textArea>
+              <span>Começar uma publicação</span>
+            </textArea>
           </div>
           <div className="attachment">
             <button>

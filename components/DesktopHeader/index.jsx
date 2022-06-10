@@ -9,7 +9,8 @@ import  {
     ProfileCircle,
     CaretDownIcon,
     BriefcaseIcon,
-    NetworkIcon
+    NetworkIcon,
+    MessageIcon
   } from './styled';
 
 export const Header = () => {
@@ -31,15 +32,19 @@ export const Header = () => {
               <NetworkIcon />
               <span>Minha rede</span>
             </button>
-            
-            <button>
-              <NotificationsIcon />
-              <span>Notificações</span>
-            </button>
             <button>
               <BriefcaseIcon />
               <span>Vagas</span>
             </button>
+            <button>
+              <MessageIcon />
+              <span>Mensagens</span>
+            </button>
+            <button>
+              <NotificationsIcon />
+              <span>Notificações</span>
+            </button>
+            
             <button>
               <ProfileCircle src="/Me2.png" />
               <span>
@@ -50,5 +55,5 @@ export const Header = () => {
         </div>
       </Wrapper>
     </Container>
-    );
+    ); 
 }

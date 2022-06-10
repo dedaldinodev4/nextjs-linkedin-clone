@@ -2,14 +2,20 @@ import styled, { css } from 'styled-components'
 import { GrLinkedin } from 'react-icons/gr';
 import {
     AiFillHome, AiOutlineBell,
-    AiFillCaretDown
+    AiFillCaretDown, AiFillMessage
 } from 'react-icons/ai';
 import {
   BiBriefcase, BiGroup
 } from 'react-icons/bi'
 
+import {
+  BsFillBriefcaseFill, 
+  BsFillBellFill, 
+  BsPeopleFill, 
+  BsFillChatRightDotsFill } from 'react-icons/bs';
+
 export const Container = styled.div`
-  background: var(--color-header);
+  background: var(--color-white);
   padding: 0 30px;
 
   position: fixed;
@@ -55,13 +61,13 @@ export const Wrapper = styled.div`
       min-width: 90px;
       min-height: 100%;
 
-      color: var(--color-icons);
+      color: var(--color-gray);
       cursor: pointer;
       &:hover {
-        color: var(--color-white);
+        color: var(--color-black);
       }
       &.active {
-        border-bottom: 2px solid var(--color-white);
+        border-bottom: 2px solid var(--color-black);
       }
     }
   }
@@ -82,14 +88,12 @@ export const SearchInput = styled.input`
   background: var(--color-input);
   color: var(--color-black);
   font-size: 14px;
-  padding: 7.5px 8px;
+  padding: 7.5px 14px;
   border: none;
   outline: none;
   border-radius: 2px;
 
-  &:focus {
-    background: var(--color-white);
-  }
+  
 `;
 
 const generalIconCSS = css`
@@ -101,7 +105,11 @@ export const HomeIcon = styled(AiFillHome)`
   ${generalIconCSS}
 `;
 
-export const NotificationsIcon = styled(AiOutlineBell)`
+export const NotificationsIcon = styled(BsFillBellFill)`
+  ${generalIconCSS}
+`;
+
+export const MessageIcon = styled(BsFillChatRightDotsFill)`
   ${generalIconCSS}
 `;
 
@@ -112,11 +120,11 @@ export const ProfileCircle = styled.img`
   border: 1px solid var(--color-icons);
 `;
 
-export const BriefcaseIcon = styled(BiBriefcase)`
+export const BriefcaseIcon = styled(BsFillBriefcaseFill)`
   ${generalIconCSS}
 `;
 
-export const NetworkIcon = styled(BiGroup)`
+export const NetworkIcon = styled(BsPeopleFill)`
   ${generalIconCSS}
 `;
 
