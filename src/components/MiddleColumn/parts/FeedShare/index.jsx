@@ -1,35 +1,31 @@
+import React from 'react'
 import { Panel } from '../../../styles';
 import {
     Container,
     WriteIcon,
     CameraIcon,
     VideoCameraIcon,
-    DocumentIcon,
     ArticleIcon,
-    textArea
+    BodyArticle
   } from './styled';
+  import { Avatar } from '../../../shared';
   
 export const FeedShare = () => {
     return (
       <Panel>
         <Container>
           <div className="write">
-            <textArea>
-              <span>Começar uma publicação</span>
-            </textArea>
+            <Avatar src="/Me2.png" alt="Me" />
+            <BodyArticle placeholder='Começar publicação' />
           </div>
           <div className="attachment">
             <button>
               <CameraIcon />
-              Foto
+              Mídia
             </button>
             <button>
               <VideoCameraIcon />
-              Video
-            </button>
-            <button>
-              <DocumentIcon />
-              Documento
+              Evento
             </button>
             <button>
               <ArticleIcon />

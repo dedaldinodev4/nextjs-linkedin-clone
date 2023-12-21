@@ -1,9 +1,11 @@
 import styled, { css } from 'styled-components';
 import { BsPencilSquare } from 'react-icons/bs';
+import { BiImage, BiCalendar } from 'react-icons/bi'
 import {
   AiOutlineCamera,
   AiOutlineVideoCamera,
   AiOutlineFileText,
+  AiOutlineFileImage,
   AiOutlineProfile,
 } from 'react-icons/ai';
 
@@ -13,7 +15,8 @@ export const Container = styled.div`
   .write {
     display: flex;
     align-items: center;
-    padding: 18px 24px;
+    justify-content: space-between;
+    padding: 10px 10px;
 
     > span {
       margin-left: 8px;
@@ -52,9 +55,12 @@ export const Container = styled.div`
 `;
 
 
-export const textArea = styled.textarea`
+export const BodyArticle = styled.input`
+  width: 100%;
+  padding: 15px 15px;
   border: 1px solid var(--color-gray);
-  border-radious: 20px;
+  border-radius: 35px;
+  font-weight: 500;
 `;
 export const WriteIcon = styled(BsPencilSquare)`
   width: 20px;
@@ -67,14 +73,14 @@ const iconCSS = css`
   margin-right: 4px;
 `;
 
-export const CameraIcon = styled(AiOutlineCamera)`
+export const CameraIcon = styled(BiImage)`
   ${iconCSS}
   color: #33aada;
 `;
 
-export const VideoCameraIcon = styled(AiOutlineVideoCamera)`
+export const VideoCameraIcon = styled(BiCalendar)`
   ${iconCSS}
-  color: #9896f2;
+  color: #C37D16;
 `;
 
 export const DocumentIcon = styled(AiOutlineFileText)`
@@ -84,5 +90,5 @@ export const DocumentIcon = styled(AiOutlineFileText)`
 
 export const ArticleIcon = styled(AiOutlineProfile)`
   ${iconCSS}
-  color: #ef7e37;
+  color: #E06847;
 `;

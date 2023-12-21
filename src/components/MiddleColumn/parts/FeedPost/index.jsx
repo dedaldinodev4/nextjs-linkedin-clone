@@ -1,13 +1,12 @@
 import React from 'react';
 
 import { Panel } from '../../../styles';
+import { Avatar,Separator } from '../../../shared';
 
 import {
   Container,
   Row,
   PostImage,
-  Separator,
-  Avatar,
   Column,
   LikeIcon,
   CommentIcon,

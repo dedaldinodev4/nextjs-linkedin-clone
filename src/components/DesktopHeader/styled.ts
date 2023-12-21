@@ -53,7 +53,7 @@ export const Wrapper = styled.div`
       background: none;
       border: 0;
       outline: 0;
-
+      font-weight: 500;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -93,6 +93,9 @@ export const SearchInput = styled.input`
   outline: none;
   border-radius: 2px;
 
+  &:focus {
+    border: 2px solid var(--color-black);
+  }
   
 `;
 
