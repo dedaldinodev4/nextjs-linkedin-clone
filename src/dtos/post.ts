@@ -7,7 +7,8 @@ export interface IPost {
   since?: string;
   description: string;
   time: string;
-  content: string;
+  content: string[];
   image?: string;
   likes: number;
+  tags?: string[];
 }

@@ -36,6 +36,15 @@ export const Row = styled.div`
   &.content {
     margin: 15px 20px;
     font-size: 14px;
+
+    .tags {
+      color: var(--color-linkedin);
+      cursor: pointer;
+      margin-right: 3px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &.likes {

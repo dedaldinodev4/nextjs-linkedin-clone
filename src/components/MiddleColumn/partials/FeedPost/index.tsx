@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Panel } from '../../../styles';
-import { Avatar,Separator } from '../../../shared';
+import { Avatar, Separator } from '../../../shared';
 import { IPost } from '../../../../dtos/post';
 
 import {
@@ -31,13 +31,22 @@ export const FeedPost = ({ post }: Props) => {
             <time>{post.time}</time>
           </Column>
         </Row>
-        <Row className="content">
+        {post.content.map((item) => (
+          <Row className="content" key={item}>
             <p>
-              {post.content}
+              {item}
             </p>
-
+          </Row>
+        ))}
+        <Row className="content">
+          {post.tags && post.tags.map((item) => (
+            <p className='tags' key={item}>
+              #{item +` `}
+            </p>
+          ))}
         </Row>
-        { post.image && 
+
+        {post.image &&
           <PostImage
             src={`/assets/posts/${post.image}`}
             alt={post.id}
