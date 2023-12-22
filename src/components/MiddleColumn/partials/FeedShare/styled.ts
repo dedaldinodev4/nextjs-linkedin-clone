@@ -32,7 +32,6 @@ export const Container = styled.div`
       justify-content: space-between;
       height: 100%;
       padding: 0 24px;
-      border-top: 1px solid var(--color-separator);
 
       button {
         display: flex;
@@ -73,20 +72,16 @@ const iconCSS = css`
   margin-right: 4px;
 `;
 
-export const CameraIcon = styled(BiImage)`
+export const MidiaIcon = styled(BiImage)`
   ${iconCSS}
   color: #33aada;
 `;
 
-export const VideoCameraIcon = styled(BiCalendar)`
+export const EventIcon = styled(BiCalendar)`
   ${iconCSS}
   color: #C37D16;
 `;
 
-export const DocumentIcon = styled(AiOutlineFileText)`
-  ${iconCSS}
-  color: #17afb8;
-`;
 
 export const ArticleIcon = styled(AiOutlineProfile)`
   ${iconCSS}

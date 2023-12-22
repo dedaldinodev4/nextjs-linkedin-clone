@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { FaHashtag, FaPeopleCarry, FaPeopleArrows  } from 'react-icons/fa';
+import { BsBookmarkFill } from 'react-icons/bs'
+import { FaUsers, FaCalendar } from 'react-icons/fa'
 
 export const ContainerProfile = styled.div`
   padding-bottom: 12px;
@@ -30,8 +32,9 @@ export const ContainerProfile = styled.div`
   }
   h2 {
     margin-top: 4px;
+    margin-bottom: 8px;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     color: var(--color-gray);
   }
@@ -46,13 +49,19 @@ export const ContainerProfile = styled.div`
     justify-content: space-between;
     font-size: 12px;
     margin: 0 12px;
-    font-weight: 600;
+    font-weight: 700;
+    cursor: pointer;
 
     .key {
       color: var(--color-gray);
+      margin-bottom: 5px;
     }
     .value {
       color: var(--color-link);
+    }
+
+    &:hover {
+      background: #BFBFBF;
     }
   }
   .key-note {
@@ -86,21 +95,50 @@ export const ContainerHashtag = styled.div`
     .title {
       color: var(--color-gray);
       margin-bottom: 10px;
+      font-weight: 600;
     }
+
+    .title-group {
+      color: var(--color-linkedin);
+      margin-bottom: 10px;
+      margin-top: 20px;
+      font-weight: 700;
+    }
+
     .tag {
       color: var(--color-gray);
       display: flex;
       align-items: center;
       padding: 3.5px 0;
+      cursor: pointer;
+
+      &:hover {
+        background: var(--color-icons);
+      }
     }
   }
 `;
 
-export const HashtagIcon = styled(FaPeopleArrows)`
+export const HashtagIcon = styled(FaUsers)`
   width: 16px;
   height: 16px;
   color: var(--color-hashtag);
   margin-right: 8px;
+`;
+
+export const EventTagIcon = styled(FaCalendar)`
+  width: 16px;
+  height: 16px;
+  color: var(--color-hashtag);
+  margin-right: 8px;
+`;
+
+export const BookMarkIcon = styled(BsBookmarkFill)`
+  width: 12px;
+  height: 12px;
+  align-items: center;
+  color: var(--color-black);
+  margin-top: 4px;
 `;
 
 export const ProfileImage = styled.img`

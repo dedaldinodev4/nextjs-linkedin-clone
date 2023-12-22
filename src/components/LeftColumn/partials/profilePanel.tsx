@@ -1,11 +1,16 @@
 import Image from 'next/image'
 import { Panel } from '../../styles';
-import { ContainerProfile, ProfileImage } from './styled';
+import { 
+  ContainerProfile, 
+  ProfileImage, 
+  BookMarkIcon 
+} from '../partials/styled';
+
 
 export const ProfilePanel = () => {
   return (
     <Panel>
-      <ContainerProfile cover = {'cover'}>
+      <ContainerProfile>
         <div className="profile-cover">
 
         </div>
@@ -14,20 +19,20 @@ export const ProfilePanel = () => {
           alt="Avatar"
         />
         <h1>Dedaldino Daniel</h1>
-        <h2>Software Developer</h2>
+        <h2>Software Developer | React | Nextjs | Angular | Node | Nestjs</h2>
 
         <div className="separator"></div>
 
         <div className="key-value">
-          <span className="key">Conexões</span>
+          <span className="key">Visualizações do perfil</span>
           <span className="value">31</span>
         </div>
-        <div className="key-note">
-          <span className="key">Amplie suar rede</span>
+        <div className="key-value">
+          <span className="key">Ver todas as análises</span>
         </div>
         <div className="separator"></div>
         <div className="key-value">
-          <span className="key">Meus itens</span>
+          <span className="key"><BookMarkIcon /> Meus itens</span>
         </div>
 
       </ContainerProfile>

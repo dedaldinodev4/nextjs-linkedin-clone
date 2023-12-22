@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Panel } from '../../../styles';
 import { Avatar,Separator } from '../../../shared';
+import { IPost } from '../../../../dtos/post';
 
 import {
   Container,
@@ -14,37 +15,40 @@ import {
   SendIcon,
 } from './styled';
 
-export const FeedPost = () => {
+interface Props {
+  post: IPost;
+}
+
+export const FeedPost = ({ post }: Props) => {
   return (
     <Panel>
       <Container>
         <Row className="heading">
-          <Avatar src="/Me2.png" alt="Me" />
+          <Avatar src={`/assets/posts/${post.avatar}`} alt="Me" />
           <Column>
-            <h3>Dedaldino Daniel</h3>
-            <h4>Software Developer</h4>
-            <time>2 sem</time>
+            <h3>{post.user}</h3>
+            <h4>{post.description}</h4>
+            <time>{post.time}</time>
           </Column>
         </Row>
         <Row className="content">
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Totam commodi corrupti placeat voluptas soluta doloremque perferendis 
-                ipsum molestiae exercitationem vitae magni corporis id laborum quos 
-                numquam voluptatibus dolorem, repudiandae reprehenderit? 
+              {post.content}
             </p>
 
         </Row>
-        <PostImage
-          src="/post.png"
-          alt="Rocketseat Blog"
-        />
+        { post.image && 
+          <PostImage
+            src={`/assets/posts/${post.image}`}
+            alt={post.id}
+          />
+        }
 
         <Row className="likes">
           <span className="circle blue" />
           <span className="circle green" />
           <span className="circle red" />
-          <span className="number">49</span>
+          <span className="number">{post.likes}</span>
         </Row>
 
         <Row>

@@ -104,6 +104,7 @@ export const Row = styled.div`
 
 export const PostImage = styled.img`
   width: 100%;
+  cursor: pointer;
 `;
 
 export const Column = styled.div``;

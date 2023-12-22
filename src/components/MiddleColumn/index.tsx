@@ -1,12 +1,17 @@
 
 import { LoadingFeedShare } from '../Load/LoadingShare';
 import { LoadingFeedPost } from '../Load/LoadingPost';
-import { FeedShare } from './parts/FeedShare';
-import { FeedPost } from  './parts/FeedPost';
+import { FeedShare } from './partials/FeedShare';
+import { FeedPost } from  './partials/FeedPost';
 
 import { Container } from './styled';
+import { posts } from '../../utils/post';
 
-export const MiddleColumn = ({ isLoading }) => {
+interface Props {
+  isLoading: boolean;
+} 
+
+export const MiddleColumn = ({ isLoading }: Props) => {
   return (
     <Container className="middle-column">
       {isLoading ? (
@@ -20,10 +25,10 @@ export const MiddleColumn = ({ isLoading }) => {
       ) : (
         <>
           <FeedShare />
-          <FeedPost />
-          <FeedPost />
-          <FeedPost />
-          <FeedPost />
+          {posts.map((item) =>(
+            <FeedPost key={item.id} post={item} />
+          ))}
+          
         </>
       )}
     </Container>

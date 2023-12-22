@@ -2,9 +2,8 @@ import React from 'react'
 import { Panel } from '../../../styles';
 import {
     Container,
-    WriteIcon,
-    CameraIcon,
-    VideoCameraIcon,
+    MidiaIcon,
+    EventIcon,
     ArticleIcon,
     BodyArticle
   } from './styled';
@@ -20,11 +19,11 @@ export const FeedShare = () => {
           </div>
           <div className="attachment">
             <button>
-              <CameraIcon />
+              <MidiaIcon />
               Mídia
             </button>
             <button>
-              <VideoCameraIcon />
+              <EventIcon />
               Evento
             </button>
             <button>

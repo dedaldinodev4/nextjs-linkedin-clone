@@ -1,8 +1,12 @@
 import { LoadingTrendingPanel } from "../Load/LoadingTrend"
-import { TrendingPanel }  from './parts/trendingPanel';
+import { TrendingPanel }  from './partials/trendingPanel';
 import { Container } from './styled';
 
-export const RightColumn = ({ isLoading }) => {
+interface Props {
+  isLoading: boolean;
+} 
+
+export const RightColumn = ({ isLoading }: Props) => {
   return (
     <Container className="right-column">
       {isLoading ? (

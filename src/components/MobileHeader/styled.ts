@@ -4,12 +4,10 @@ import { FiMessageSquare } from 'react-icons/fi';
 export const Container = styled.div`
   background: var(--color-link);
   padding: 0 16px;
-
   height: 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   position: fixed;
   top: 0;
   left: 0;

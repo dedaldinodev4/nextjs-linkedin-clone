@@ -1,6 +1,6 @@
 import { LoadingProfilePaneL} from '../Load/LoadingProfile';
-import { ProfilePanel } from './parts/profilePanel';
-import { HashtagPanel } from './parts/hashtagPanel';
+import { ProfilePanel } from './partials/profilePanel';
+import { HashtagPanel } from './partials/hashtagPanel';
 
 import { Container } from './styled';
 

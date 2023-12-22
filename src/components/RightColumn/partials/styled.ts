@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { FaPlus, FaArrowRight } from 'react-icons/fa'
+import { BsInfoSquareFill } from 'react-icons/bs'
 
 export const Container = styled.div`
   &:nth-child(2) {
@@ -80,23 +81,13 @@ export const Hendler = styled.div`
     font-size: 14px;
     color: var(--color-black);
     cursor: pointer;
-    
-    &:hover {
-      color: var(--color-gray);
-    }
   }
   h4 {
     font-size: 12px;
     font-weight: normal;
     color: var(--color-gray);
     cursor: pointer;
-    
-    &:hover {
-      color: var(--color-black);
-    }
   }
-}
-
 `;
 
 export const Avatar = styled.img`
@@ -114,10 +105,11 @@ export const Column = styled.div`
 
 export const Button = styled.a`
   text-align: center;
+  font-size: 16px;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  dispaly: flex;
+  display: flex;
   position: absolute;
   padding: 4px 8px;
   border: 1px solid var(--color-gray);
@@ -125,14 +117,27 @@ export const Button = styled.a`
   background: var(--color-white);
   
   &:hover {
-    background: var(--color-background);
-    border: 2px solid var(--color-gray);
+    background: #A6A6A6;
     cursor: pointer;
   }
 `;
 
-export const BtnIcon = styled(FaPlus)``;
+export const BtnIcon = styled(FaPlus)`
+  width: 12px;
+  height: 12px;
+`;
 
 export const BtnTarget = styled(FaArrowRight)`
   margin: -2px 5px;
+`;
+
+export const InfoIcon = styled(BsInfoSquareFill)`
+  width: 14px;
+  height: 14px;
+`
+
+export const ContainerHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
