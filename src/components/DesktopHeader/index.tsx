@@ -46,7 +46,7 @@ export const Header = () => {
             </button>
             
             <button>
-              <ProfileCircle src="/Me2.png" />
+              <ProfileCircle src="/assets/avatar_url.png" />
               <span>
                 Eu <CaretDownIcon />
               </span>

@@ -12,3 +12,9 @@ export interface IPost {
   likes: number;
   tags?: string[];
 }
+
+export interface IPostRequest {
+  content: string;
+  image: string | null;
+  tags: string | null;
+}

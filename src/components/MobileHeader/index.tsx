@@ -7,7 +7,7 @@ import { Container,
 export const MobileHeader = () => {
   return (
     <Container>
-      <ProfileCircle src="https://github.com/dedaldinodev4.png" />
+      <ProfileCircle src="/assets/avatar_url.png" />
       <SearchInput placeholder="Pesquisar" />
       <MessageIcon />
     </Container>

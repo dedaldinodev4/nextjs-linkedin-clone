@@ -44,10 +44,6 @@ export const Container = styled.div`
         font-weight: 600;
 
         cursor: pointer;
-        &:hover,
-        &:focus {
-          background: rgba(0, 0, 0, 0.05);
-        }
       }
     }
   }
