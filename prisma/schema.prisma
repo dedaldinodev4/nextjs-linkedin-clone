@@ -10,4 +10,29 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model User {
+  id          String   @id @default(uuid())
+  name        String
+  description String
+  email       String   @unique
+  avatar      String?
+  since       String?
+  status      Boolean  @default(true)
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+  Post        Post[]
+}
 
+model Post {
+  id          String   @id @default(uuid())
+  description String
+  content     String //List content
+  likes       Int      @default(0)
+  tags        String //List tags
+  image       String?
+  time        String
+  id_user     String
+  user        User     @relation(fields: [id_user], references: [id])
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+}

@@ -10,16 +10,16 @@ import {
 export const ProfilePanel = () => {
   return (
     <Panel>
-      <ContainerProfile>
+      <ContainerProfile cover={`cover`}>
         <div className="profile-cover">
 
         </div>
         <ProfileImage
-          src="/Me2.png"
+          src="/assets/avatar_url.png"
           alt="Avatar"
         />
         <h1>Dedaldino Daniel</h1>
-        <h2>Software Developer | React | Nextjs | Angular | Node | Nestjs</h2>
+        <h2>Developer | Typescript | React | Nextjs | Angular | Node | Nestjs</h2>
 
         <div className="separator"></div>
 
