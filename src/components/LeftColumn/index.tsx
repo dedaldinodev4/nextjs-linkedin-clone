@@ -4,10 +4,13 @@ import { HashtagPanel } from './partials/hashtagPanel';
 
 import { Container } from './styled';
 
-export const LeftColumn = ({ isLoading }) => {
+interface Props  {
+  isLoading: boolean;
+}
+export const LeftColumn = ({ isLoading }: Props) => {
   return (
     <Container className="left-column">
-      {isLoading ? (
+      { isLoading ? (
         <LoadingProfilePaneL />
       ) : (
         <>

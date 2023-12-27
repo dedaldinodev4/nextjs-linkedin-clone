@@ -9,7 +9,7 @@ export const ContainerProfile = styled.div`
   .profile-cover {
     width: 100%;
     height: 54px;
-    background: url('/${props => props.cover}.jpg') no-repeat scroll center center;
+    background: url('/cover.jpg') no-repeat scroll center center;
     background-size: cover;
     border-radius: 5px 5px 0 0;
   }
