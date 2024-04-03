@@ -24,7 +24,7 @@ export const FeedPost = ({ post }: Props) => {
     <Panel>
       <Container>
         <Row className="heading">
-          <Avatar src={`/assets/posts/${post.avatar}`} alt="Me" />
+          <Avatar src={post.avatar ? `/assets/posts/${post.avatar}`: ''} alt="Me" />
           <Column>
             <h3>{post.user}</h3>
             <h4>{post.description}</h4>

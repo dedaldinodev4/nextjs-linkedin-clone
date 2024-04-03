@@ -14,7 +14,7 @@ export const FeedShare = () => {
       <Panel>
         <Container>
           <div className="write">
-            <Avatar src="/assets/avatar_url.png" alt="Me" />
+            <Avatar src="/assets/personal.jpeg" alt="Me" />
             <BodyArticle placeholder='Começar publicação' />
           </div>
           <div className="attachment">

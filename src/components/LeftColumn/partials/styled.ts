@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { FaHashtag, FaPeopleCarry, FaPeopleArrows  } from 'react-icons/fa';
 import { BsBookmarkFill } from 'react-icons/bs'
 import { FaUsers, FaCalendar } from 'react-icons/fa'
 
@@ -9,7 +8,7 @@ export const ContainerProfile = styled.div`
   .profile-cover {
     width: 100%;
     height: 54px;
-    background: url('/cover.jpg') no-repeat scroll center center;
+    background: url('/assets/cover-personal.jpeg') no-repeat scroll center center;
     background-size: cover;
     border-radius: 5px 5px 0 0;
   }
@@ -33,6 +32,8 @@ export const ContainerProfile = styled.div`
   h2 {
     margin-top: 4px;
     margin-bottom: 8px;
+    margin-left: 2px;
+    margin-right: 2px;
     font-size: 12px;
     font-weight: 500;
     text-align: center;
@@ -42,6 +43,18 @@ export const ContainerProfile = styled.div`
     width: 100%;
     border-bottom: 1px solid var(--color-separator);
     margin: 16px 0 12px;
+  }
+
+  .image-profile {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+    box-shadow: inset 0 1.5px 3px 0 var(--black-a15, rgba(0, 0, 0, 0.15)),
+      0 1.5px 3px 0 var(--black-a15, rgba(0, 0, 0, 0.15));
+  
+    display: flex;
+    margin: -38px auto 12px;
   }
   .key-value {
     display: flex;

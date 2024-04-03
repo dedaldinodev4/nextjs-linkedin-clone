@@ -10,16 +10,17 @@ import {
 export const ProfilePanel = () => {
   return (
     <Panel>
-      <ContainerProfile cover={`cover`}>
+      <ContainerProfile>
         <div className="profile-cover">
 
         </div>
-        <ProfileImage
-          src="/assets/avatar_url.png"
+        <img
+          className='image-profile'
+          src="/assets/personal.jpeg"
           alt="Avatar"
         />
         <h1>Dedaldino Daniel</h1>
-        <h2>Developer | Typescript | React | Nextjs | Angular | Node | Nestjs</h2>
+        <h2>{`A plane at the airport is safe, but that's not what planes are built for.`}</h2>
 
         <div className="separator"></div>
 

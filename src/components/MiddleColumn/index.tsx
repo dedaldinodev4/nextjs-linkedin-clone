@@ -13,24 +13,27 @@ interface Props {
 
 export const MiddleColumn = ({ isLoading }: Props) => {
   return (
-    <Container className="middle-column">
-      {isLoading ? (
-        <>
-          <LoadingFeedShare />
-          <LoadingFeedPost />
-          <LoadingFeedPost />
-          <LoadingFeedPost />
-          <LoadingFeedPost />
-        </>
-      ) : (
-        <>
-          <FeedShare />
-          {posts.map((item) =>(
-            <FeedPost key={item.id} post={item} />
-          ))}
-          
-        </>
-      )}
-    </Container>
+    <>
+    
+      <Container className="middle-column">
+        {isLoading ? (
+          <>
+            <LoadingFeedShare />
+            <LoadingFeedPost />
+            <LoadingFeedPost />
+            <LoadingFeedPost />
+            <LoadingFeedPost />
+          </>
+        ) : (
+          <>
+            <FeedShare />
+            {posts.map((item) =>(
+              <FeedPost key={item.id} post={item} />
+            ))}
+            
+          </>
+        )}
+      </Container>
+    </>
   );
 };
